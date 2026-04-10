@@ -9,6 +9,8 @@ export default function InventoryDetails({ item }) {
           <img
             src={inventoryApi.photoUrl(item.id)}
             alt={item.inventory_name}
+            width="200px"
+            height="200px"
             className="w-full h-full object-cover"
             onError={(e) => {
               e.target.style.display = "none";

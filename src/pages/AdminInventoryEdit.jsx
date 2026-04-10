@@ -177,6 +177,8 @@ export default function AdminInventoryEdit() {
                   <img
                     src={inventoryApi.photoUrl(id)}
                     alt="current"
+                    width="200px"
+                    height="200px"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.style.display = "none";
@@ -192,7 +194,7 @@ export default function AdminInventoryEdit() {
                 <p className="text-xs text-zinc-600 mb-1">New</p>
                 <label className="flex flex-col items-center justify-center border border-dashed border-zinc-700 hover:border-amber-500/50 rounded px-4 py-5 cursor-pointer transition-colors group">
                   {preview ? (
-                    <img src={preview} alt="new" className="h-10 object-contain" />
+                    <img src={preview} alt="new" className="h-10 object-contain" width="200px" height="200px"/>
                   ) : (
                     <>
                       <span className="text-xl text-zinc-600 group-hover:text-amber-500/60 transition-colors mb-1">↑</span>

@@ -74,7 +74,7 @@ export default function InventoryForm({ initial = {}, onSubmit, loading, submitL
         <div className="flex items-start gap-4">
           {preview && (
             <div className="w-20 h-20 rounded border border-zinc-700 overflow-hidden shrink-0">
-              <img src={preview} alt="preview" className="w-full h-full object-cover" />
+              <img src={preview} alt="preview" className="w-full h-full object-cover" height="200px" width="200px" />
             </div>
           )}
           <label className="flex-1 flex flex-col items-center justify-center border border-dashed border-zinc-700 hover:border-amber-500/50 rounded px-4 py-6 cursor-pointer transition-colors group">
